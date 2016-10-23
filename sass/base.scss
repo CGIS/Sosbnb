@@ -1,0 +1,72 @@
+@import 'module';
+
+$header-height: 62px;
+$light-gray: rgb(220, 224, 224);
+$main-background-color: rgb(255, 255, 255);
+
+*:focus {
+	outline: none;
+}
+
+header {
+	border-bottom: 1px solid $light-gray;
+	position: fixed;
+	width: 100%;
+
+	@include clean-anchor;
+	.item {
+		border-left: 1px solid $light-gray;
+		height: $header-height;
+		line-height: $header-height + 2;
+		position: relative;
+		a {
+			display: inline-block;
+			&:hover {
+				background-color: $main-background-color*0.9;
+			}
+		}
+	}
+	.company-icon {
+		font-size: 2em;
+		.header-btn .glyphicon{
+			padding: 0 0.75em;
+			&:before {
+				position: relative;
+				font-size: 1.1em;
+				top: 0.2em;
+				padding-right: 0.2em;
+			}
+		}
+	}
+}
+
+.sm-button a {
+	padding: 0 1em;
+}
+
+.search-bar-wrapper {
+	width: 10000px;
+	display: table-cell;
+	.search-bar {
+		.glyphicon {
+			font-size: 1.5em;
+			top: 0.9em;
+			left: 0.75em;
+			position: absolute;
+		}
+		input {
+			border: none;
+			line-height: 1.5em;
+			padding: 1.3em 0 1.3em 3.25em;
+			width: 100%;
+		}
+	}
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
