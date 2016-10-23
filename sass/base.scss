@@ -1,4 +1,6 @@
 @import 'module';
+@import 'map';
+@import 'controlPanel';
 
 $header-height: 62px;
 $light-gray: rgb(220, 224, 224);
@@ -38,6 +40,16 @@ header {
 			}
 		}
 	}
+}
+
+main {
+	position: absolute;
+	top: $header-height + 2;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	@include tgos;
+	@include control-panel;
 }
 
 .sm-button a {

@@ -1,4 +1,11 @@
-function initTgosMap(){
-	var pOMap = document.getElementById("TGMap");
-	var pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826);
-}
+var application = {
+	init: function(){
+		var mapTag = document.getElementById("TGOS");
+		this.map = new TGOS.TGOnlineMap(mapTag, TGOS.TGCoordSys.EPSG3826);
+	}
+};
+
+
+$(function() {
+    application.init();
+});

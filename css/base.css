@@ -27,6 +27,22 @@ header {
         top: 0.2em;
         padding-right: 0.2em; }
 
+main {
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  main #TGOS {
+    position: fixed;
+    left: auto;
+    right: 0; }
+  main .control-panel {
+    position: fixed;
+    left: 0px;
+    width: 60%;
+    height: 100%; }
+
 .sm-button a {
   padding: 0 1em; }
 
