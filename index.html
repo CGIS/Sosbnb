@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="Shortcut Icon" href="images/favicon.ico" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- for bootstrap3 datetimepicker -->
+	<script type="text/javascript" src="bower/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower/moment/min/moment.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+	<link rel="stylesheet" href="bower/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
 	<script type="text/javascript" src="js/TGOS.js" ></script>
 	<script type="text/javascript" src="js/SOS.js" ></script>
 </head>
@@ -35,7 +39,33 @@
 	</header>
 	<main>
 		<div class="control-panel">
-			<div class="search-bar">empty</div>
+			<div class="filters">
+				<div class="filter-section">
+					<div class="row">
+						<div class="col-lg-3 space-sm-1">
+							<div class="filter-header">
+								<span>日期</span>
+							</div>
+						</div>
+						<div class="col-lg-8">
+							<div class="row filter-date">
+						        <div class='col-sm-5'>
+				                    <input type='text' class="form-control" id='startPosition'/>
+						        </div>
+						        <div class='col-sm-5'>
+				                    <input type='text' class="form-control"  id='endPosition'/>
+						        </div>
+						        <script type="text/javascript">
+						            $(function () {
+						                $('#startPosition').datetimepicker();
+						                $('#endPosition').datetimepicker();
+						            });
+						        </script>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="TGOS" style="width: 40%; height: 100%;"></div>
 	</main>

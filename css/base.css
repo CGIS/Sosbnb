@@ -1,3 +1,27 @@
+@charset "UTF-8";
+.filters {
+  position: fixed;
+  padding-bottom: 70px;
+  z-index: 11;
+  top: 70px;
+  left: 0;
+  right: 40%;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .filters.collapse {
+    position: static;
+    overflow: initial;
+    padding-bottom: 0;
+    border-bottom: 1px solid #dce0e0; }
+  .filters .filter-section {
+    line-height: 2em;
+    display: block; }
+
 *:focus {
   outline: none; }
 
@@ -44,7 +68,7 @@ main {
     height: 100%; }
 
 .sm-button a {
-  padding: 0 1em; }
+  padding: 0 1.75em; }
 
 .search-bar-wrapper {
   width: 10000px;
@@ -59,6 +83,37 @@ main {
     line-height: 1.5em;
     padding: 1.3em 0 1.3em 3.25em;
     width: 100%; }
+
+.filters {
+  position: fixed;
+  padding-bottom: 70px;
+  z-index: 11;
+  top: 66px;
+  left: 0;
+  right: 40%;
+  bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .filters.collapse {
+    position: static;
+    overflow: initial;
+    padding-bottom: 0;
+    border-bottom: 1px solid #dce0e0; }
+  .filters .filter-section {
+    padding: 15px;
+    display: block;
+    font-size: 1.2em;
+    border-bottom: 1px solid #dce0e0; }
+    .filters .filter-section .filter-header {
+      color: #6e7070;
+      font-famliy: "Hiragino Sans GB", "华文细黑", "STHeiti", "微软雅黑", "Microsoft YaHei", SimHei, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .filters .filter-date input {
+    padding: 20px;
+    width: 95%; }
 
 .pull-left {
   float: left; }

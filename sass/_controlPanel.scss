@@ -6,3 +6,34 @@
 		height: 100%;
 	}
 }
+
+.filters {
+	position: fixed;
+    padding-bottom: 70px;
+    z-index: 11;
+    top: 70px;
+    left: 0;
+    right: 40%;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &.collapse {
+    	position: static;
+	    overflow: initial;
+	    padding-bottom: 0;
+	    border-bottom: 1px solid #dce0e0;
+    }
+
+    .filter-section {
+    	line-height: 2em;
+    	display: block;
+    	.filter-header {
+    		// padding: 1em;
+    	}
+    }
+}
