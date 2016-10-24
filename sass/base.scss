@@ -45,7 +45,7 @@ header {
 
 main {
 	position: absolute;
-	top: $header-height + 2;
+	top: $header-height;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -57,6 +57,7 @@ main {
 	padding: 0 1.75em;
 }
 
+.empty-bar-wrapper,
 .search-bar-wrapper {
 	width: 10000px;
 	display: table-cell;
@@ -115,6 +116,54 @@ main {
     		width: 95%;
     	}
     }
+}
+
+.register-panel-wrapper {
+	background-color: $light-gray * 1.1;
+
+	.register-panel {
+		@include centre(x);
+		background-color: white;
+		border-radius: 0.5em;
+		width: 500px;
+		top: 100px;
+
+		.register-header {
+			font-size: 1.5em;
+			line-height: 3em;
+			border-bottom: 1px solid $light-gray;
+			span {
+				padding: 0 2.5em;
+			}
+		}
+
+		.register-section, .register-button {
+			height: 4em;
+		}
+
+		.register-section {
+			line-height: 4em;
+
+			label {
+				display: inline-block;
+				font-size: 1.2em;
+				padding: 0 0 0 2em; 
+				width: 20%;
+			}
+			input, select {
+				display: inline-block;
+				// width: 70%;
+			}
+		}
+
+		.register-button {
+			padding: 0 2em;
+			button {
+				width: 100%;
+			}
+		}
+
+	}
 }
 
 .pull-left {
